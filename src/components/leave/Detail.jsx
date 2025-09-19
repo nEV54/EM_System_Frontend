@@ -13,7 +13,7 @@ const Detail = () => {
 
             try {
 
-                const response = await axios.get(`http://localhost:3000/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://ems-system-backend.vercel.app/api/leave/detail/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -35,7 +35,7 @@ const Detail = () => {
     const changeStatus = async (id, status) => {
         try {
 
-            const response = await axios.put(`http://localhost:3000/api/leave/${id}`, {status:status}, {
+            const response = await axios.put(`https://ems-system-backend.vercel.app/api/leave/${id}`, {status:status}, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
@@ -59,7 +59,7 @@ const Detail = () => {
                     <h2 className='text-2xl font-bold mb-8 text-center'>Leave Details</h2>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
-                            <img src={`http://localhost:3000/${leave.employeeId.userId.profileImage}`}
+                            <img src={`https://ems-system-backend.vercel.app/${leave.employeeId.userId.profileImage}`}
                                 className='rounded-full border w-72'
                             />
                         </div>

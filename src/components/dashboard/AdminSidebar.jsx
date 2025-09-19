@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { FaBuilding, FaCalendarAlt, FaCogs, FaMoneyBillWave, FaRegCalendarAlt, FaTachometerAlt, FaUsers } from "react-icons/fa"
 import {AiOutlineFileText} from 'react-icons/ai'
 
-const AdminSidebar = () => {
+const AdminSideBar = () => {
     return (
         <div className='bg-gray-800 text-white h-screen fixed left-0 top-0 bottom-0 space-y-2 w-64'>
             <div className='bg-teal-600 h-12 flex items-center justify-center'>
@@ -57,4 +57,4 @@ const AdminSidebar = () => {
     )
 }
 
-export default AdminSidebar
+export default AdminSideBar
